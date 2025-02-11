@@ -1,20 +1,84 @@
+/* Basic styles */
 body {
     font-family: Courier New, monospace;
-    text-align: center;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
 header {
-    background: #5b7c99;
+    background-color: #5b7c99; /* Slate Blue */
     color: white;
-    padding: 10px;
-}
-section {
-    margin: 20px;
     padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Hamburger Icon - 3-line bar */
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Menu List Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu - Initially hidden */
+#nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #5b7c99; /* Slate Blue */
+    width: 100%;
+    text-align: center;
+}
+
+#nav-menu ul {
+    flex-direction: column; /* Stack the links vertically in the dropdown */
+}
+
+#nav-menu ul li {
+    margin: 10px 0; /* Add vertical spacing between menu items */
+}
+
+/* Media Query for Mobile (small screens) */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show the hamburger icon on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide normal navigation bar on small screens */
+    }
+
+    #nav-menu {
+        display: block; /* Show the dropdown menu on small screens */
+    }
 }
 
