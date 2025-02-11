@@ -72,7 +72,7 @@ nav ul li a:hover {
 /* Media Query for Mobile (small screens) */
 @media (max-width: 768px) {
     nav ul {
-        display: none;
+        display: none; /* Hide normal navigation bar on small screens */
     }
 
     #nav-menu {
@@ -104,4 +104,3 @@ nav ul li a:hover {
     height: auto;
     margin-top: 20px;
 }
-
