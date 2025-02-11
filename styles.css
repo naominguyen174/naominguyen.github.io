@@ -18,10 +18,10 @@ header {
 .hamburger-menu {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* Hidden by default, shown on mobile */
     position: absolute;
     top: 20px;
     left: 20px;
+    display: block; /* Always show the hamburger icon */
 }
 
 /* Menu List Styles */
@@ -69,21 +69,12 @@ nav ul li a:hover {
 
 /* Media Query for Mobile (small screens) */
 @media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; /* Show the hamburger icon on small screens */
-    }
-
     nav ul {
         display: none; /* Hide normal navigation bar on small screens */
     }
 
     #nav-menu {
         display: block; /* Show the dropdown menu on small screens */
-    }
-
-    /* Optional: Add some padding to the body to ensure dropdown doesn't overlap the content */
-    body {
-        padding-top: 80px; /* Adjust this value if needed */
     }
 }
 
