@@ -11,8 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Toggle the menu visibility
-function toggleMenu() {
-    const menu = document.getElementById('nav-menu');
-    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+// Toggle the visibility of the navigation menu
+function toggleNav() {
+    var navMenu = document.getElementById("navMenu");
+
+    // Toggle the menu visibility
+    if (navMenu.style.display === "none" || navMenu.style.display === "") {
+        navMenu.style.display = "block"; // Show the menu
+    } else {
+        navMenu.style.display = "none"; // Hide the menu
+    }
 }
