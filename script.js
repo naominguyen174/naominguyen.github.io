@@ -17,10 +17,10 @@ function toggleMenu() {
     var navMenu = document.getElementById("nav-menu");
 
     // Toggle the menu visibility
-    if (navMenu.classList.contains("hidden")) {
-        navMenu.classList.remove("hidden"); // Show the menu
+    if (navMenu.style.display === "none" || navMenu.style.display === "") {
+        navMenu.style.display = "block"; // Show the menu
     } else {
-        navMenu.classList.add("hidden"); // Hide the menu
+        navMenu.style.display = "none"; // Hide the menu
     }
 }
 
