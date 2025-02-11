@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const projects = [
-        { name: "Portfolio Website (this one!)", link: "https://naominguyen174.github.io" }
+        { name: "Portfolio Website (THIS ONE!)", link: "https://naominguyen174.github.io" }
     ];
 
     const projectList = document.getElementById("project-list");
