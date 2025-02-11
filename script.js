@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Toggle the visibility of the navigation menu
-function toggleNav() {
+function toggleMenu() {
     var navMenu = document.getElementById("nav-menu");
 
     // Toggle the menu visibility
