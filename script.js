@@ -23,10 +23,3 @@ function toggleNav() {
         navMenu.style.display = "none"; // Hide the menu
     }
 }
-
-// Ensure the menu is hidden by default when the page loads
-document.addEventListener("DOMContentLoaded", function () {
-    var navMenu = document.getElementById("nav-menu");
-    navMenu.style.display = "none"; // Hide the menu by default
-});
-
