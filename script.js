@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Project list (if needed for dynamic project loading)
     const projects = [
         { name: "Portfolio Website (THIS ONE!)", link: "https://naominguyen174.github.io/naominguyen174.github.io" }
     ];
@@ -12,13 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Toggle the visibility of the navigation menu
-function toggleNav() {
-    var navMenu = document.getElementById("navMenu");
+function toggleMenu() {
+    var navMenu = document.getElementById("nav-menu");
 
     // Toggle the menu visibility
-    if (navMenu.style.display === "none" || navMenu.style.display === "") {
-        navMenu.style.display = "block"; // Show the menu
+    if (navMenu.classList.contains("hidden")) {
+        navMenu.classList.remove("hidden"); // Show the menu
     } else {
-        navMenu.style.display = "none"; // Hide the menu
+        navMenu.classList.add("hidden"); // Hide the menu
     }
 }
+
