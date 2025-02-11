@@ -82,3 +82,9 @@ nav ul li a:hover {
     }
 }
 
+.profile-img {
+    width: 150px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin: 20px 0; /* Add some space above and below the image */
+}
