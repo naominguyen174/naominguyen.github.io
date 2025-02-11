@@ -80,13 +80,18 @@ nav ul li a:hover {
     #nav-menu {
         display: block; /* Show the dropdown menu on small screens */
     }
+
+    /* Optional: Add some padding to the body to ensure dropdown doesn't overlap the content */
+    body {
+        padding-top: 80px; /* Adjust this value if needed */
+    }
 }
 
 #troll {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
 }
