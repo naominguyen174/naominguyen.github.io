@@ -8,10 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Naomi Nguyen</h1>
-        <p>Mathematics/Computer Science Major</p>
-        <!-- Navigation Bar -->
-        <nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            &#9776; <!-- This is the HTML entity for the hamburger icon -->
+        </div>
+
+        <!-- Dropdown Navigation Menu -->
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -20,6 +23,7 @@
         </nav>
     </header>
 
+    <!-- Content Sections -->
     <section id="about">
         <h2>About Me</h2>
         <p>I am a 4th-year Mathematics/Computer Science major at UCLA. I am passionate about biotechnology and software development. Growing up in Fresno, I hope to explore the Agriculture Technology industry.</p>
@@ -39,4 +43,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
